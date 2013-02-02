@@ -6,7 +6,7 @@ all: link
 
 
 compile:
-	$(CC) -c channel.c thundersynth.c $(CFLAGS)
+	$(CC) -c channel.c thundersynth.c constantarrays.c $(CFLAGS)
 
 link: compile
 	$(CC) -o thundersynth channel.o thundersynth.o $(LIBS) 

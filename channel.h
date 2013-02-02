@@ -13,7 +13,7 @@
 #include "notes.h"
 
 #define SAMPLING_FREQ 44100
-#define BLOCKS_PER_SEC 1000
+#define BLOCKS_PER_SEC  1050
 #define BLOCK_LEN SAMPLING_FREQ/BLOCKS_PER_SEC
 #define BPM 120
 #define SAMPLES_PER_BEAT SAMPLING_FREQ*60/BPM
@@ -68,6 +68,10 @@ typedef struct {
 } oscillator;
 
 typedef struct {
+  
+} sine_oscillator;
+
+typedef struct {
   u16 current_amp_scale; // Q0.16
   u16 until_release;
   u8 current_phase;
@@ -90,7 +94,11 @@ void adsr_block(adsr *a, u8* block, u16 len);
 u8 scale_amplitude(u8 in, u8 scale); // scales 
 void calc_release_time(adsr *a, u16 note_length);
 
-extern u16 notes[];
+extern const u16 notes[];
+extern const u16 notesperiod[];
+
+extern const u8 sine512[];
+extern const u8 sine1024[];
 
 
 #endif // CHANNEL_H

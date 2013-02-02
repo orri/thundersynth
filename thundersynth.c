@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 #include "channel.h"
+#include "constantarrays.h"
 
 void auwritehead(FILE *f){
   char headerinfo[] =  {'.', 's', 'n', 'd', 
@@ -30,8 +31,8 @@ int main(){
   osc.period = (u8*)malloc(SAMPLING_FREQ / notes[0] ); // use length of longest note
   
   notelist nl = {0, 0, 72, 0,0,0};
-  u8 *song = malloc(83);//{a2, b2, c3, r, e3, f3, g3};
-  u8 *durs = malloc(83);//{q, q, q, q, q, e, e};
+  u8 *song = (u8*)malloc(84);//{a2, b2, c3, r, e3, f3, g3};
+  u8 *durs = (u8*)malloc(84);//{q, q, q, q, q, e, e};
   for (i = 0; i< 84; i++){
     song[i] = i;
     durs[i] = e;
@@ -42,11 +43,12 @@ int main(){
   nl.list = song;
   nl.durations = durs;
     
-  channel chan = {(u8*)malloc(BLOCK_LEN), &nl, &osc, 
-		  (adsr*)malloc(sizeof(adsr))};
+  channel chan = {0, &nl, &osc, 0};
+  adsr adsr = {0,0,0};
+  chan.a = &adsr;
   get_next_note(&chan);
   
-
+  chan.channel_block = (u8*)malloc(BLOCK_LEN);
 
   printf("setting up main loop\n");
   FILE * ofile = fopen("auout.au", "w");
@@ -55,7 +57,7 @@ int main(){
   // main loop:
   u8 cont = 1;
   u8 blocks = 0xff;
-  u16 index;
+  u16 index = 0;
   //  u16 block_count = 0;
   while (cont){
     //   printf("block nr: %d\n", block_count++);
@@ -87,6 +89,9 @@ int main(){
   fclose(plotfile);
   free(osc.period);
   free(chan.channel_block);
+  free(song);
+  free(durs);
+  
 
   return 0;
 
