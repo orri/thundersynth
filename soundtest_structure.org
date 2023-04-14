@@ -1,0 +1,129 @@
+
+
+
+* Note 
+sexteen, eight, note, 
+(not decided what it is in the program) 
+
+can be a rest.
+
+** adsr is used on notes
+** sustain_time should vary but not atack-, decay-, and rest time.
+
+needs enum for notes names
+
+* Note names
+enum
+c1 c#1 d1 ... b1 c2 c#2 ...
+should c# and db be the same?
+
+* Note lengths
+ec1 - eight note
+qc1 - quarter note etc...
+sc1, tc1, hc1, wc1, dc1 - sixteen-, thirtytwo-, half-, whole-, double-
+
+* BPM
+length of quarter note
+** no 6/8 or any other sense of time signature
+not even a concept of 4/4 is known
+
+* channel 
+has a list of notes,
+has one oscillator
+has one block of samples
+has a status, knows where it is in the list of notes.
+** implemented as a struct
+
+** update_channel() method
+keeps track of which note is in progress being played,
+keeps track on ADSR status
+calls oscillator function.
+
+Should channel be tightly coupled to the ADSR?
+
+* ADSR
+implement an object that belongs to the channel.
+** The ADSR object has a
+*** status variable for in which phase it is in
+enum type - values: ATTACK, DECAY, SUSTAIN, REST
+*** constants for
+attack_time, decay_time, ...
+*** status variabe for which sample it is working on,
+
+*** function that applies ADSR on the current block.
+It is can be called multipe times for each note.
+
+** implemented as a struct.
+
+
+* Block 
+the number of samples updated at a time
+** implemened as a constant value)
+
+* output_fifo
+ a circular fifo, updated with one block at a time. 
+filled in main loop and streamed to audio device
+
+** implemented as an unsigned char array
+
+** an integer number of blocks
+
+** has read and write pointers
+
+* main loop
+fills output fifo,
+calls the snd_pcm_write when there are enough data in the output fifo
+
+for (i = 0; i < num_channels; i++)
+  channel_block = update_channel() 
+  master_block += channel_block / num_channels
+
+output_channel.push(master_block)
+
+while (amount_in_output_fifo > enough && not_last_data)
+   snd_pcm_writei(handle, one_block_from_fifo, sizeof(block));
+
+wait() ???
+
+** update 
+
+* oscillator : 
+
+struct, has a wave type, has phase
+can change type of wave during a song?
+
+
+
+
+* Features
+** first version
+*** stream audio to sound device.
+*** read an own type of music file 
+with lists of notes for each channel
+
+*** play notes with ADSR, sine, trig, square, (duty cycles)
+
+
+** later version
+*** play input in real time from input device
+therefore design first version as a real time program
+
+*** glissendo
+*** tremolo
+*** arpeggio
+*** inverse adsr
+
+** other
+*** some way to plot waveforms for debugging
+write sample data to a file and plot it in some other program
+
+*** 16 bit version?
+
+
+
+* Todos
+
+* DONE define notes
+  CLOSED: [2013-01-27 Sun 01:53]
+
+

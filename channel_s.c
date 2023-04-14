@@ -8,12 +8,19 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "channel.h"
+#include "channel_s.h"
 
 
 #define dprintf if(0)printf
 
-
+/** @brief creates one period of a sine wave
+    @param length of the sine period in samples
+*/
+/*void sine_period(u8 *period, u16 period_len){
+  u16 i;
+  for (i=0; i < period_len; i++)
+    period[i] = round(128+127*sin(i*2*M_PI/period_len));
+    };*/
 
 void square_period(u8 *period, u16 period_len){
   u16 i;
@@ -64,6 +71,15 @@ void random_period(u8 *period, u16 period_len){
 
 
 
+u16 duration_to_samples(u8 duration)
+{
+  return SAMPLES_PER_BEAT*duration>>4; // duration is in Q4.4
+}
+
+
+/*void calc_release_time(adsr *a, u16 note_length){
+  a->until_release =  note_length*START_RELEASE >> 8; // start_release is Q0.8
+  }*/
 
 
 inline u8 scale_amplitude(u8 in, u8 scale){
@@ -85,7 +101,7 @@ inline void initialize_line(linealg* l, u16 period_len)
   // 1 addition  (assuming compiler will compute DELTAY-1 )
   // 1 integer division
   // 1 intiger modulo
-  // no data dependency
+  // no data dependenc
 }
 
 inline u16 next_line_val(linealg* l)
@@ -106,35 +122,14 @@ inline u16 next_line_val(linealg* l)
   // has data dependencies 
 }
 
-inline u8 next_sine_sample(step_osc *osc){
+inline u8 next_sine_sample(step_sine_osc *osc){
   return SINE_TABLE[next_line_val(osc->la)];
 }
-
-// sine, trig, saw
-inline void new_per(step_osc *osc, u16 period_len){
+inline void new_sine_per(step_sine_osc *osc, u16 period_len){
   initialize_line(osc->la, period_len);
-  osc->period_len = period_len;
 }
 
-inline void new_square_per(step_osc *osc,  u16 period_len, u8 duty){
-  u16 phase = ((u32)osc->per_count<<8)/osc->period_len; 
-  // phase a hex percentage (Q8.8 never bigger than 1.0)
-  // per_count is always smaller than (old) period_len 
-  // maximum value for pahse is 0x100;
-  osc->per_count = phase*period_len >> 8;
-  osc->cut_point = period_len*duty >> 8; // duty is Q0.8
-  osc->period_len = period_len;
-}
-
-inline u8 next_square_sample(step_osc *osc){
-  u8 result = 0x40;
-  if (osc->per_count > osc->cut_point)
-    result = 0xc0;
-  osc->per_count = (osc->per_count+1) % osc->period_len;
-  return result;
-}
-
-inline u8 next_trig_sample(step_osc *osc){
+inline u8 next_trig_sample(step_trig_osc *osc){
   u16 val = next_line_val(osc->la);
   u8 val8 = (u8)val; // msb ignored
 
@@ -151,41 +146,47 @@ inline u8 next_trig_sample(step_osc *osc){
   // to create the down flank.
 }
       
+inline void new_trig_per(step_trig_osc *osc, u16 period_len){
+  initialize_line(osc->la, period_len);
+  osc->period_len = period_len;
+}
 
-
-inline u8 next_saw_sample(step_osc *osc){
+inline u8 next_saw_sample(step_saw_osc *osc){
   //  osc->period_len = period_len;
   return next_line_val(osc->la) >> 1;
 }
 
+inline void new_saw_per(step_saw_osc *osc,  u16 period_len){
+  initialize_line(osc->la, period_len);
+}
 
-inline u8 adsr_sample(adsr *a, adsr_params *ap, u8 sample){
+inline u8 adsr_sample(adsr *a, u8 sample){
   // find next ADSR value and phase
   u8 scale;
   u16 decay_ampl;
   switch(a->phase){
   case ATTACK:
-    a->amp_scale += ap->attack_coeff;// (a->amp_scale*a->attack_coeff)>>15; // Q0.16 = Q0.16*Q1.15
+    a->amp_scale += a->attack_coeff;// (a->amp_scale*a->attack_coeff)>>15; // Q0.16 = Q0.16*Q1.15
     scale = a->amp_scale >> 8; 
-    if (scale > ap->attack_level)
+    if (scale > a->attack_level)
       a->phase = DECAY;    
     break;
 
   case DECAY:
-    decay_ampl = a->amp_scale - (ap->sustain_level<<8);
-    decay_ampl = decay_ampl*ap->decay_coeff >> 15;
-    a->amp_scale = decay_ampl + (ap->sustain_level<<8);
+    decay_ampl = a->amp_scale - (a->sustain_level<<8);
+    decay_ampl = decay_ampl*a->decay_coeff >> 15;
+    a->amp_scale = decay_ampl + (a->sustain_level<<8);
     scale = a->amp_scale >> 8;
-    if (scale < ap->sustain_level+1)
+    if (scale < a->sustain_level+1)
       a->phase = SUSTAIN;
     break;
   case SUSTAIN:
-    a->amp_scale = ap->sustain_level << 8;
-    scale = ap->sustain_level;
+    a->amp_scale = a->sustain_level << 8;
+    scale = a->sustain_level;
     // stay in this phase until note is released
     break;
   case RELEASE:
-    a->amp_scale = (a->amp_scale*ap->release_coeff)>>15; // Q0.16 = Q0.16*Q1.15
+    a->amp_scale = (a->amp_scale*a->release_coeff)>>15; // Q0.16 = Q0.16*Q1.15
     scale = a->amp_scale >> 8; 
     break;
   case REST:
@@ -200,97 +201,6 @@ inline u8 adsr_sample(adsr *a, adsr_params *ap, u8 sample){
 
 }
 
-// translates adsr into a priority value to release
-inline u16 adsr_val(adsr* a)
-{
-  u16 phase_val = (5- a->phase) << 8;
-  u16 amp_val = a->amp_scale >> 8;
-
-  return (phase_val + amp_val);
-}
-
-inline u8 get_osc_num(channel *c){
-  u16 i, osc_val;
-  u8 min_num = 0;
-  u16 min_val = 0xffff;
-  for (i = 0; i < c->num_osc; i++){
-    osc_val = adsr_val(c->adsr[i]);
-
-    if (c->last_osc == i)
-      osc_val++;
-
-
-    if (osc_val < min_val){
-      min_val = osc_val;
-      min_num = i;
-    }
-  } 
-  
-  c->last_osc = min_num;
-
-  return min_num;
-}
-
-
-void note_press(channel *c, u8 key_val, u8 velocity ){
-  u8 osc_num = get_osc_num(c);
-  switch (c->wavetype){
-  case TRIG:
-  case SINE:
-  case SAW:
-    new_per(c->osc[osc_num], notesperiod[key_val - 0x24]);
-    break;
-  case SQUARE:
-    new_square_per(c->osc[osc_num], notesperiod[key_val - 0x24], c->duty_cycle);
-    break;
-  }
-  c->adsr[osc_num]->phase = ATTACK;
-  if (c->adsr[osc_num]->amp_scale < 0x100)
-    c->adsr[osc_num]->amp_scale = 0x100;
-  
-}
-
-void note_release(channel *c, u8 key_val ){
-  u8 i;
-  for (i=0; i<c->num_osc; i++){
-    if ( c->osc[i]->period_len == notesperiod[key_val - 0x24]){
-      c->adsr[i]->phase = RELEASE;
-    }
-  }
-  
-}
-
-inline u8 next_channel_sample(channel *c){
-  u8 result, i;
-  u8 osc_samples[8]; // assume never more than 8 oscillators
-  result = 0;
-  switch (c->wavetype){
-  case TRIG:
-    for (i = 0; i < c->num_osc; i++)
-      osc_samples[i] = next_trig_sample(c->osc[i]);
-    break;
-  case SINE:
-    for (i = 0; i < c->num_osc; i++)
-      osc_samples[i] = next_sine_sample(c->osc[i]);
-    break;
-  case SQUARE:
-    for (i = 0; i < c->num_osc; i++)
-      osc_samples[i] = next_square_sample(c->osc[i]);
-    break;
-  case SAW:
-    for (i = 0; i < c->num_osc; i++)
-      osc_samples[i] = next_saw_sample(c->osc[i]);
-    break;
-  }
-  
-  for (i = 0; i < c->num_osc; i++){
-    osc_samples[i] = adsr_sample(c->adsr[i], c->ap, osc_samples[i]);
-    result +=  osc_samples[i]>>3; // divide by 8, if occilators are 8.
-  }
-
-  return result;
-  
-}
 
 const u16 notes[84] = { 65, 69, 73, 78, 82, 87, 92, 98, 104, 110, 117, 123, 131, 139, 147, 156, 165, 175, 185, 196, 208, 220, 233, 247, 262, 277, 294, 311, 330, 349, 370, 392, 415, 440, 466, 494, 523, 554, 587, 622, 659, 698, 740, 784, 831, 880, 932, 988, 1047, 1109, 1175, 1245, 1319, 1397, 1480, 1568, 1661, 1760, 1865, 1976, 2093, 2217, 2349, 2489, 2637, 2794, 2960, 3136, 3322, 3520, 3729, 3951, 4186, 4435, 4699, 4978, 5274, 5588, 5920, 6272, 6645, 7040, 7459, 7902};
 

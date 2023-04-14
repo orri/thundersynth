@@ -13,7 +13,14 @@
 
 #define dprintf if(0)printf
 
-
+/** @brief creates one period of a sine wave
+    @param length of the sine period in samples
+*/
+/*void sine_period(u8 *period, u16 period_len){
+  u16 i;
+  for (i=0; i < period_len; i++)
+    period[i] = round(128+127*sin(i*2*M_PI/period_len));
+    };*/
 
 void square_period(u8 *period, u16 period_len){
   u16 i;
@@ -85,7 +92,7 @@ inline void initialize_line(linealg* l, u16 period_len)
   // 1 addition  (assuming compiler will compute DELTAY-1 )
   // 1 integer division
   // 1 intiger modulo
-  // no data dependency
+  // no data dependenc
 }
 
 inline u16 next_line_val(linealg* l)
@@ -163,6 +170,7 @@ inline u8 adsr_sample(adsr *a, adsr_params *ap, u8 sample){
   // find next ADSR value and phase
   u8 scale;
   u16 decay_ampl;
+ 
   switch(a->phase){
   case ATTACK:
     a->amp_scale += ap->attack_coeff;// (a->amp_scale*a->attack_coeff)>>15; // Q0.16 = Q0.16*Q1.15
@@ -285,7 +293,7 @@ inline u8 next_channel_sample(channel *c){
   
   for (i = 0; i < c->num_osc; i++){
     osc_samples[i] = adsr_sample(c->adsr[i], c->ap, osc_samples[i]);
-    result +=  osc_samples[i]>>3; // divide by 8, if occilators are 8.
+    result +=  osc_samples[i]>>3;
   }
 
   return result;

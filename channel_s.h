@@ -1,35 +1,54 @@
 /** 
-*  @file channel.h
+*  @file channel_s.h
 *  @brief defines major building blocks for Thundersynth
 *  @author Orri Tómasson
 */
 
-#ifndef CHANNEL_H
-#define CHANNEL_H
+#ifndef CHANNEL_S_H
+#define CHANNEL_S_H
 
 
 #include <stdint.h>
 #include <stdio.h>
 #include "notes.h"
 
+#define SAMPLING_FREQ 44100
+#define BLOCKS_PER_SEC  1050
+#define BLOCK_LEN SAMPLING_FREQ/BLOCKS_PER_SEC
+#define BPM 120
+#define SAMPLES_PER_BEAT SAMPLING_FREQ*60/BPM
+
 typedef uint8_t u8;
 typedef int8_t s8;
 typedef uint16_t u16;
-typedef uint32_t u32;
 typedef int16_t s16;
 typedef uint32_t u32;
 
-
+// ADSR coefficientes are in Q4.12
+#define ATTACK_COEFF 0x1010 
+#define DECAY_COEFF 0x0ff0
+#define RELEASE_COEFF 0x0ff0
+// ADSR times are simmulated using adsrtest.py
+#define ATTACK_TIME 100//2260//2840
+#define DECAY_TIME 271//4950
+#define RELEASE_TIME 4209
+#define ADR_TIME (ATTACK_TIME+DECAY_TIME+RELEASE_TIME)
+// ADSR phases enums
 #define ATTACK 0
 #define DECAY 1
 #define SUSTAIN 2
 #define RELEASE 3
 #define REST 5
 
+#define ATTACK_LEVEL 0xfe00
+#define SUSTAIN_LEVEL 0x80
+#define START_RELEASE 0x80
+
 #define TRIG 0
 #define SINE 1
-#define SAW 2
-#define SQUARE 3
+#define SQUARE 0xc0
+#define SQUARE75 0xe0
+#define SQUARE25 0xa0
 #define RANDOM 7
 
 
@@ -40,13 +59,10 @@ typedef uint32_t u32;
 #define SINE_TABLE sine512
 #define SINE_TABLE_LOG 9
 #elif SINE_TABLE_LEN == 1024
-
 #define SINE_TABLE sine1024;
 #define SINE_TABLE_LOG 10
 #endif
 
-
-// used to pre program
 
 typedef struct {
   u8 *list;
@@ -55,6 +71,18 @@ typedef struct {
   u16 curr_note_length,  amount_done; // samples
   u16 next_note; // index to list and durations
 } notelist;
+
+typedef struct {
+  u8 wavetype; // TRIG, SQUARE, sine ...
+  // u8 phase;    // the phase the oscillator was in.
+  u8 *period;
+  u16 period_len; // number of allocated bytes for period.
+  u16 period_index; 
+} oscillator;
+
+
+
+
 
 
 
@@ -104,20 +132,6 @@ typedef struct {
   u16 period_len;
   linealg *la; 
 } step_sine_osc;
-/*
-typedef struct {
-  u16 period_len;
-  double phase;
-  double step;
-} step_dsine_osc;
-*/
-
-typedef struct {
-  u16 period_len;
-  linealg *la; // not used by SQUARE
-  u16 per_count; // only used by SQUARE 
-  u16 cut_point; // duty cycle for sqare waves
-} step_osc;
 
 typedef struct {
   u16 period_len;
@@ -136,60 +150,48 @@ typedef struct {
 } step_square_osc;
 
 
-typedef struct {
-  u16 attack_coeff, decay_coeff, release_coeff; // all are Q1.15
-  u8 sustain_level, attack_level, adsr_off;
-} adsr_params;
-  
+
+
 typedef struct {
   u16 amp_scale, prev_ampscale; // Q0.16
   u8 phase;
+  u16 attack_coeff, decay_coeff, release_coeff; // all are Q1.15
+  u8 sustain_level, attack_level;
 } adsr;
 
 typedef struct {
-  step_osc **osc;
-  adsr **adsr;
-  u8 num_osc;
+  void *osc; // an array of oscillators of length 
   u8 wavetype; 
-  adsr_params *ap;
-  u8 last_osc;
-  u8 duty_cycle; // only for square w
+  adsr *adsr;
 } channel;
 
 
 
 
 
-//void get_new_period(oscillator* osc, u16 frequency);
-//void run_oscillator(oscillator* osc, u8* buffer, u16 len);
-void note_press(channel *c, u8 key_val, u8 velocity );
-void note_release(channel *c, u8 key_val);
-
+void get_new_period(oscillator* osc, u16 frequency);
+void run_oscillator(oscillator* osc, u8* buffer, u16 len);
 //u8 get_next_note(channel* chan);
 //u8 next_chan_block(channel* chan);
 //void adsr_block(adsr *a, u8* block, u16 len);
 u8 scale_amplitude(u8 in, u8 scale); // scales 
 //void calc_release_time(adsr *a, u16 note_length);
 void initialize_line(linealg* l, u16 period_len);
-
-inline u8 next_channel_sample(channel *c);
-
 inline u16 next_line_val(linealg* l);
-inline u8 adsr_sample(adsr *a, adsr_params *ap, u8 sample);
+inline u8 adsr_sample(adsr *, u8 sample);
 
 
-inline u8 next_sine_sample(step_osc *osc);
-inline u8 next_trig_sample(step_osc *osc);
-inline u8 next_saw_sample(step_osc *osc);
-inline u8 next_square_sample(step_osc *osc);
-// sine, trig and sawtooth
-inline void new_per(step_osc *osc,  u16 period_len);
-inline void new_square_per(step_osc *osc,  u16 period_len, u8 duty);
+inline u8 next_sine_sample(step_sine_osc *osc);
+inline void new_sine_per(step_sine_osc *osc,  u16 period_len);
 
+inline u8 next_trig_sample(step_trig_osc *osc);
+inline void new_trig_per(step_trig_osc *osc,  u16 period_len);
 
+inline u8 next_saw_sample(step_saw_osc *osc);
+inline void new_saw_per(step_saw_osc *osc,  u16 period_len);
 
-
-
+//inline u8 next_osc_sample(step_osc *osc);
+//inline void next_osc_per(step_osc *osc, u16 period_len);
 
 extern const u16 notes[];
 extern const u16 notesperiod[];
@@ -198,4 +200,4 @@ extern const u8 sine512[];
 extern const u8 sine1024[];
 
 
-#endif // CHANNEL_H
+#endif // CHANNEL_S_H

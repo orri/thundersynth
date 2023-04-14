@@ -1,0 +1,2243 @@
+Playback device is default
+12period_s: 128
+opening device: /dev/snd/midiC3D0
+delay: 502 avail 135, cnt: 0
+delay       : 87
+
+delay: 570 avail 151, cnt: 0
+delay       : 111
+
+delay: 560 avail 151, cnt: 0
+delay       : 127
+
+delay: 547 avail 183, cnt: 0
+delay       : 103
+
+delay: 526 avail 215, cnt: 0
+delay       : 111
+
+delay: 520 avail 215, cnt: 0
+delay       : 71
+
+delay: 508 avail 247, cnt: 0
+delay       : 103
+
+delay: 612 avail 167, cnt: 0
+delay       : 111
+
+delay: 602 avail 167, cnt: 0
+delay       : 63
+
+delay: 590 avail 199, cnt: 0
+delay       : 111
+
+delay: 583 avail 199, cnt: 0
+delay       : 103
+
+delay: 575 avail 199, cnt: 0
+delay       : 71
+
+delay: 562 avail 239, cnt: 0
+delay       : 119
+
+delay: 554 avail 239, cnt: 0
+delay       : 103
+
+delay: 546 avail 239, cnt: 0
+delay       : 71
+
+delay: 546 avail 256, cnt: 1
+delay       : 103
+
+delay: 546 avail 256, cnt: 2
+delay       : 95
+
+delay: 546 avail 256, cnt: 3
+delay       : 87
+
+delay: 546 avail 256, cnt: 4
+delay       : 63
+
+delay: 546 avail 256, cnt: 5
+delay       : 119
+
+delay: 546 avail 256, cnt: 6
+delay       : 119
+
+delay: 546 avail 256, cnt: 7
+delay       : 103
+
+delay: 546 avail 256, cnt: 8
+delay       : 95
+
+delay: 546 avail 256, cnt: 9
+delay       : 87
+
+delay: 546 avail 256, cnt: 10
+delay       : 79
+
+delay: 546 avail 256, cnt: 11
+delay       : 79
+
+delay: 546 avail 256, cnt: 12
+delay       : 119
+
+delay: 546 avail 256, cnt: 13
+delay       : 111
+
+delay: 546 avail 256, cnt: 14
+delay       : 103
+
+delay: 546 avail 256, cnt: 15
+delay       : 95
+
+delay: 546 avail 256, cnt: 16
+delay       : 87
+
+delay: 546 avail 256, cnt: 17
+delay       : 79
+
+delay: 546 avail 256, cnt: 18
+delay       : 127
+
+delay: 546 avail 256, cnt: 19
+delay       : 119
+
+delay: 546 avail 256, cnt: 20
+delay       : 111
+
+delay: 546 avail 256, cnt: 21
+delay       : 103
+
+delay: 546 avail 256, cnt: 22
+delay       : 103
+
+delay: 546 avail 256, cnt: 23
+delay       : 95
+
+delay: 546 avail 256, cnt: 24
+delay       : 87
+
+delay: 546 avail 256, cnt: 25
+delay       : 127
+
+delay: 546 avail 256, cnt: 26
+delay       : 119
+
+delay: 546 avail 256, cnt: 27
+delay       : 111
+
+delay: 546 avail 256, cnt: 28
+delay       : 103
+
+delay: 546 avail 256, cnt: 29
+delay       : 95
+
+delay: 546 avail 256, cnt: 30
+delay       : 87
+
+delay: 546 avail 256, cnt: 31
+delay       : 79
+
+delay: 546 avail 256, cnt: 32
+delay       : 71
+
+delay: 546 avail 256, cnt: 33
+delay       : 119
+
+delay: 546 avail 256, cnt: 34
+delay       : 111
+
+delay: 546 avail 256, cnt: 35
+delay       : 103
+
+delay: 546 avail 256, cnt: 36
+delay       : 95
+
+delay: 546 avail 256, cnt: 37
+delay       : 87
+
+delay: 546 avail 256, cnt: 38
+delay       : 79
+
+delay: 546 avail 256, cnt: 39
+delay       : 63
+
+delay: 546 avail 256, cnt: 40
+delay       : 119
+
+delay: 546 avail 256, cnt: 41
+delay       : 111
+
+delay: 546 avail 256, cnt: 42
+delay       : 103
+
+delay: 546 avail 256, cnt: 43
+delay       : 95
+
+delay: 546 avail 256, cnt: 44
+delay       : 79
+
+delay: 546 avail 256, cnt: 45
+delay       : 71
+
+delay: 546 avail 256, cnt: 46
+delay       : 63
+
+delay: 546 avail 256, cnt: 47
+delay       : 111
+
+delay: 546 avail 256, cnt: 48
+delay       : 103
+
+delay: 546 avail 256, cnt: 49
+delay       : 95
+
+delay: 546 avail 256, cnt: 50
+delay       : 71
+
+delay: 546 avail 256, cnt: 51
+delay       : 119
+
+delay: 546 avail 256, cnt: 52
+delay       : 111
+
+delay: 546 avail 256, cnt: 53
+delay       : 95
+
+delay: 546 avail 256, cnt: 54
+delay       : 87
+
+delay: 546 avail 256, cnt: 55
+delay       : 79
+
+delay: 546 avail 256, cnt: 56
+delay       : 71
+
+delay: 546 avail 256, cnt: 57
+delay       : 63
+
+delay: 546 avail 256, cnt: 58
+delay       : 111
+
+delay: 546 avail 256, cnt: 59
+delay       : 103
+
+delay: 546 avail 256, cnt: 60
+delay       : 87
+
+delay: 546 avail 256, cnt: 61
+delay       : 79
+
+delay: 546 avail 256, cnt: 62
+delay       : 71
+
+delay: 546 avail 256, cnt: 63
+delay       : 127
+
+delay: 546 avail 256, cnt: 64
+delay       : 111
+
+delay: 546 avail 256, cnt: 65
+delay       : 103
+
+delay: 546 avail 256, cnt: 66
+delay       : 87
+
+delay: 546 avail 256, cnt: 67
+delay       : 79
+
+delay: 546 avail 256, cnt: 68
+delay       : 71
+
+delay: 546 avail 256, cnt: 69
+delay       : 119
+
+delay: 546 avail 256, cnt: 70
+delay       : 103
+
+delay: 546 avail 256, cnt: 71
+delay       : 95
+
+delay: 546 avail 256, cnt: 72
+delay       : 87
+
+delay: 546 avail 256, cnt: 73
+delay       : 79
+
+delay: 546 avail 256, cnt: 74
+delay       : 63
+
+delay: 546 avail 256, cnt: 75
+delay       : 119
+
+delay: 546 avail 256, cnt: 76
+delay       : 103
+
+delay: 546 avail 256, cnt: 77
+delay       : 95
+
+delay: 546 avail 256, cnt: 78
+delay       : 87
+
+delay: 546 avail 256, cnt: 79
+delay       : 119
+
+delay: 546 avail 256, cnt: 80
+delay       : 95
+
+delay: 546 avail 256, cnt: 81
+delay       : 87
+
+delay: 546 avail 256, cnt: 82
+delay       : 71
+
+delay: 546 avail 256, cnt: 83
+delay       : 63
+
+delay: 546 avail 256, cnt: 84
+delay       : 119
+
+delay: 546 avail 256, cnt: 85
+delay       : 95
+
+delay: 546 avail 256, cnt: 86
+delay       : 87
+
+delay: 546 avail 256, cnt: 87
+delay       : 79
+
+delay: 546 avail 256, cnt: 88
+delay       : 63
+
+delay: 546 avail 256, cnt: 89
+delay       : 103
+
+delay: 546 avail 256, cnt: 90
+delay       : 87
+
+delay: 546 avail 256, cnt: 91
+delay       : 71
+
+delay: 546 avail 256, cnt: 92
+delay       : 119
+
+delay: 546 avail 256, cnt: 93
+delay       : 111
+
+delay: 546 avail 256, cnt: 94
+delay       : 103
+
+delay: 546 avail 256, cnt: 95
+delay       : 87
+
+delay: 546 avail 256, cnt: 96
+delay       : 79
+
+delay: 546 avail 256, cnt: 97
+delay       : 63
+
+delay: 546 avail 256, cnt: 98
+delay       : 119
+
+delay: 546 avail 256, cnt: 99
+delay       : 103
+
+delay: 546 avail 256, cnt: 100
+delay       : 87
+
+delay: 546 avail 256, cnt: 101
+delay       : 71
+
+delay: 546 avail 256, cnt: 102
+delay       : 63
+
+delay: 546 avail 256, cnt: 103
+delay       : 103
+
+delay: 546 avail 256, cnt: 104
+delay       : 95
+
+delay: 546 avail 256, cnt: 105
+delay       : 79
+
+delay: 546 avail 256, cnt: 106
+delay       : 63
+
+delay: 546 avail 256, cnt: 107
+delay       : 111
+
+delay: 546 avail 256, cnt: 108
+delay       : 87
+
+delay: 546 avail 256, cnt: 109
+delay       : 71
+
+delay: 546 avail 256, cnt: 110
+delay       : 103
+
+delay: 546 avail 256, cnt: 111
+delay       : 95
+
+delay: 546 avail 256, cnt: 112
+delay       : 79
+
+delay: 546 avail 256, cnt: 113
+delay       : 63
+
+delay: 546 avail 256, cnt: 114
+delay       : 119
+
+delay: 546 avail 256, cnt: 115
+delay       : 103
+
+delay: 546 avail 256, cnt: 116
+delay       : 95
+
+delay: 546 avail 256, cnt: 117
+delay       : 79
+
+delay: 546 avail 256, cnt: 118
+delay       : 71
+
+delay: 546 avail 256, cnt: 119
+delay       : 119
+
+delay: 546 avail 256, cnt: 120
+delay       : 103
+
+delay: 546 avail 256, cnt: 121
+delay       : 87
+
+delay: 546 avail 256, cnt: 122
+delay       : 71
+
+delay: 546 avail 256, cnt: 123
+delay       : 127
+
+delay: 546 avail 256, cnt: 124
+delay       : 111
+
+delay: 546 avail 256, cnt: 125
+delay       : 103
+
+delay: 546 avail 256, cnt: 126
+delay       : 87
+
+delay: 546 avail 256, cnt: 127
+delay       : 71
+
+delay: 546 avail 256, cnt: 128
+delay       : 127
+
+delay: 546 avail 256, cnt: 129
+delay       : 111
+
+delay: 546 avail 256, cnt: 130
+delay       : 95
+
+delay: 546 avail 256, cnt: 131
+delay       : 71
+
+delay: 546 avail 256, cnt: 132
+delay       : 63
+
+delay: 546 avail 256, cnt: 133
+delay       : 111
+
+delay: 546 avail 256, cnt: 134
+delay       : 95
+
+delay: 546 avail 256, cnt: 135
+delay       : 87
+
+delay: 546 avail 256, cnt: 136
+delay       : 111
+
+delay: 546 avail 256, cnt: 137
+delay       : 95
+
+delay: 546 avail 256, cnt: 138
+delay       : 87
+
+delay: 546 avail 256, cnt: 139
+delay       : 71
+
+delay: 546 avail 256, cnt: 140
+delay       : 127
+
+delay: 546 avail 256, cnt: 141
+delay       : 111
+
+delay: 546 avail 256, cnt: 142
+delay       : 87
+
+delay: 546 avail 256, cnt: 143
+delay       : 87
+
+delay: 546 avail 256, cnt: 144
+delay       : 79
+
+delay: 546 avail 256, cnt: 145
+delay       : 127
+
+delay: 546 avail 256, cnt: 146
+delay       : 111
+
+delay: 546 avail 256, cnt: 147
+delay       : 103
+
+delay: 546 avail 256, cnt: 148
+delay       : 87
+
+delay: 546 avail 256, cnt: 149
+delay       : 79
+
+delay: 546 avail 256, cnt: 150
+delay       : 63
+
+delay: 546 avail 256, cnt: 151
+delay       : 119
+
+delay: 546 avail 256, cnt: 152
+delay       : 103
+
+delay: 546 avail 256, cnt: 153
+delay       : 87
+
+delay: 546 avail 256, cnt: 154
+delay       : 79
+
+delay: 546 avail 256, cnt: 155
+delay       : 119
+
+delay: 546 avail 256, cnt: 156
+delay       : 103
+
+delay: 546 avail 256, cnt: 157
+delay       : 95
+
+delay: 546 avail 256, cnt: 158
+delay       : 119
+
+delay: 546 avail 256, cnt: 159
+delay       : 87
+
+delay: 546 avail 256, cnt: 160
+delay       : 79
+
+delay: 546 avail 256, cnt: 161
+delay       : 119
+
+delay: 546 avail 256, cnt: 162
+delay       : 111
+
+delay: 546 avail 256, cnt: 163
+delay       : 95
+
+delay: 546 avail 256, cnt: 164
+delay       : 79
+
+delay: 546 avail 256, cnt: 165
+delay       : 71
+
+delay: 546 avail 256, cnt: 166
+delay       : 119
+
+delay: 546 avail 256, cnt: 167
+delay       : 95
+
+delay: 546 avail 256, cnt: 168
+delay       : 63
+
+delay: 546 avail 256, cnt: 169
+delay       : 119
+
+delay: 546 avail 256, cnt: 170
+delay       : 103
+
+delay: 546 avail 256, cnt: 171
+delay       : 87
+
+delay: 546 avail 256, cnt: 172
+delay       : 79
+
+delay: 546 avail 256, cnt: 173
+delay       : 127
+
+delay: 546 avail 256, cnt: 174
+delay       : 111
+
+delay: 546 avail 256, cnt: 175
+delay       : 95
+
+delay: 546 avail 256, cnt: 176
+delay       : 95
+
+delay: 546 avail 256, cnt: 177
+delay       : 63
+
+delay: 546 avail 256, cnt: 178
+delay       : 111
+
+delay: 546 avail 256, cnt: 179
+delay       : 95
+
+delay: 546 avail 256, cnt: 180
+delay       : 63
+
+delay: 546 avail 256, cnt: 181
+delay       : 119
+
+delay: 546 avail 256, cnt: 182
+delay       : 103
+
+delay: 546 avail 256, cnt: 183
+delay       : 87
+
+delay: 546 avail 256, cnt: 184
+delay       : 79
+
+delay: 546 avail 256, cnt: 185
+delay       : 63
+
+delay: 546 avail 256, cnt: 186
+delay       : 119
+
+delay: 546 avail 256, cnt: 187
+delay       : 103
+
+delay: 546 avail 256, cnt: 188
+delay       : 79
+
+delay: 546 avail 256, cnt: 189
+delay       : 63
+
+delay: 546 avail 256, cnt: 190
+delay       : 111
+
+delay: 546 avail 256, cnt: 191
+delay       : 103
+
+delay: 546 avail 256, cnt: 192
+delay       : 87
+
+delay: 546 avail 256, cnt: 193
+delay       : 71
+
+delay: 546 avail 256, cnt: 194
+delay       : 119
+
+delay: 546 avail 256, cnt: 195
+delay       : 111
+
+delay: 546 avail 256, cnt: 196
+delay       : 87
+
+delay: 546 avail 256, cnt: 197
+delay       : 79
+
+delay: 546 avail 256, cnt: 198
+delay       : 111
+
+delay: 546 avail 256, cnt: 199
+delay       : 103
+
+delay: 546 avail 256, cnt: 200
+delay       : 87
+
+delay: 546 avail 256, cnt: 201
+delay       : 79
+
+delay: 546 avail 256, cnt: 202
+delay       : 127
+
+delay: 546 avail 256, cnt: 203
+delay       : 111
+
+delay: 546 avail 256, cnt: 204
+delay       : 95
+
+delay: 546 avail 256, cnt: 205
+delay       : 79
+
+delay: 546 avail 256, cnt: 206
+delay       : 119
+
+delay: 546 avail 256, cnt: 207
+delay       : 103
+
+delay: 546 avail 256, cnt: 208
+delay       : 87
+
+delay: 546 avail 256, cnt: 209
+delay       : 79
+
+delay: 546 avail 256, cnt: 210
+delay       : 63
+
+delay: 546 avail 256, cnt: 211
+delay       : 111
+
+delay: 546 avail 256, cnt: 212
+delay       : 95
+
+delay: 546 avail 256, cnt: 213
+delay       : 87
+
+delay: 546 avail 256, cnt: 214
+delay       : 71
+
+delay: 546 avail 256, cnt: 215
+delay       : 127
+
+delay: 546 avail 256, cnt: 216
+delay       : 111
+
+delay: 546 avail 256, cnt: 217
+delay       : 95
+
+delay: 546 avail 256, cnt: 218
+delay       : 87
+
+delay: 546 avail 256, cnt: 219
+delay       : 71
+
+delay: 546 avail 256, cnt: 220
+delay       : 127
+
+delay: 546 avail 256, cnt: 221
+delay       : 111
+
+delay: 546 avail 256, cnt: 222
+delay       : 95
+
+delay: 546 avail 256, cnt: 223
+delay       : 79
+
+delay: 546 avail 256, cnt: 224
+delay       : 63
+
+delay: 546 avail 256, cnt: 225
+delay       : 119
+
+delay: 546 avail 256, cnt: 226
+delay       : 103
+
+delay: 546 avail 256, cnt: 227
+delay       : 87
+
+delay: 546 avail 256, cnt: 228
+delay       : 79
+
+delay: 546 avail 256, cnt: 229
+delay       : 127
+
+delay: 546 avail 256, cnt: 230
+delay       : 111
+
+delay: 546 avail 256, cnt: 231
+delay       : 127
+
+delay: 546 avail 256, cnt: 232
+delay       : 111
+
+delay: 546 avail 256, cnt: 233
+delay       : 95
+
+delay: 546 avail 256, cnt: 234
+delay       : 111
+
+delay: 546 avail 256, cnt: 235
+delay       : 95
+
+delay: 546 avail 256, cnt: 236
+delay       : 79
+
+delay: 546 avail 256, cnt: 237
+delay       : 95
+
+delay: 546 avail 256, cnt: 238
+delay       : 79
+
+delay: 546 avail 256, cnt: 239
+delay       : 71
+
+delay: 546 avail 256, cnt: 240
+delay       : 119
+
+delay: 546 avail 256, cnt: 241
+delay       : 111
+
+delay: 546 avail 256, cnt: 242
+delay       : 95
+
+delay: 546 avail 256, cnt: 243
+delay       : 79
+
+delay: 546 avail 256, cnt: 244
+delay       : 63
+
+delay: 546 avail 256, cnt: 245
+delay       : 119
+
+delay: 546 avail 256, cnt: 246
+delay       : 103
+
+delay: 546 avail 256, cnt: 247
+delay       : 87
+
+delay: 546 avail 256, cnt: 248
+delay       : 71
+
+delay: 546 avail 256, cnt: 249
+delay       : 119
+
+delay: 546 avail 256, cnt: 250
+delay       : 111
+
+delay: 546 avail 256, cnt: 251
+delay       : 95
+
+delay: 546 avail 256, cnt: 252
+delay       : 87
+
+delay: 546 avail 256, cnt: 253
+delay       : 71
+
+delay: 546 avail 256, cnt: 254
+delay       : 119
+
+delay: 546 avail 256, cnt: 255
+delay       : 103
+
+delay: 546 avail 256, cnt: 256
+delay       : 87
+
+delay: 546 avail 256, cnt: 257
+delay       : 71
+
+delay: 546 avail 256, cnt: 258
+delay       : 119
+
+delay: 546 avail 256, cnt: 259
+delay       : 95
+
+delay: 546 avail 256, cnt: 260
+delay       : 87
+
+delay: 546 avail 256, cnt: 261
+delay       : 71
+
+delay: 546 avail 256, cnt: 262
+delay       : 119
+
+delay: 546 avail 256, cnt: 263
+delay       : 103
+
+delay: 546 avail 256, cnt: 264
+delay       : 87
+
+delay: 546 avail 256, cnt: 265
+delay       : 71
+
+delay: 546 avail 256, cnt: 266
+delay       : 119
+
+delay: 546 avail 256, cnt: 267
+delay       : 103
+
+delay: 546 avail 256, cnt: 268
+delay       : 87
+
+delay: 546 avail 256, cnt: 269
+delay       : 71
+
+delay: 546 avail 256, cnt: 270
+delay       : 119
+
+delay: 546 avail 256, cnt: 271
+delay       : 111
+
+delay: 546 avail 256, cnt: 272
+delay       : 95
+
+delay: 546 avail 256, cnt: 273
+delay       : 87
+
+delay: 546 avail 256, cnt: 274
+delay       : 63
+
+delay: 546 avail 256, cnt: 275
+delay       : 63
+
+delay: 546 avail 256, cnt: 276
+delay       : 111
+
+delay: 546 avail 256, cnt: 277
+delay       : 95
+
+delay: 546 avail 256, cnt: 278
+delay       : 71
+
+delay: 546 avail 256, cnt: 279
+delay       : 103
+
+delay: 546 avail 256, cnt: 280
+delay       : 87
+
+delay: 546 avail 256, cnt: 281
+delay       : 71
+
+delay: 546 avail 256, cnt: 282
+delay       : 119
+
+delay: 546 avail 256, cnt: 283
+delay       : 95
+
+delay: 546 avail 256, cnt: 284
+delay       : 87
+
+delay: 546 avail 256, cnt: 285
+delay       : 63
+
+delay: 546 avail 256, cnt: 286
+delay       : 111
+
+delay: 546 avail 256, cnt: 287
+delay       : 87
+
+delay: 546 avail 256, cnt: 288
+delay       : 71
+
+delay: 546 avail 256, cnt: 289
+delay       : 119
+
+delay: 546 avail 256, cnt: 290
+delay       : 103
+
+delay: 546 avail 256, cnt: 291
+delay       : 87
+
+delay: 546 avail 256, cnt: 292
+delay       : 79
+
+delay: 546 avail 256, cnt: 293
+delay       : 119
+
+delay: 546 avail 256, cnt: 294
+delay       : 95
+
+delay: 546 avail 256, cnt: 295
+delay       : 71
+
+delay: 546 avail 256, cnt: 296
+delay       : 111
+
+delay: 546 avail 256, cnt: 297
+delay       : 95
+
+delay: 546 avail 256, cnt: 298
+delay       : 79
+
+delay: 546 avail 256, cnt: 299
+delay       : 127
+
+delay: 546 avail 256, cnt: 300
+delay       : 103
+
+delay: 546 avail 256, cnt: 301
+delay       : 87
+
+delay: 546 avail 256, cnt: 302
+delay       : 79
+
+delay: 546 avail 256, cnt: 303
+delay       : 127
+
+delay: 546 avail 256, cnt: 304
+delay       : 103
+
+delay: 546 avail 256, cnt: 305
+delay       : 87
+
+delay: 546 avail 256, cnt: 306
+delay       : 71
+
+delay: 546 avail 256, cnt: 307
+delay       : 119
+
+delay: 546 avail 256, cnt: 308
+delay       : 103
+
+delay: 546 avail 256, cnt: 309
+delay       : 95
+
+delay: 546 avail 256, cnt: 310
+delay       : 79
+
+delay: 546 avail 256, cnt: 311
+delay       : 63
+
+delay: 546 avail 256, cnt: 312
+delay       : 103
+
+delay: 546 avail 256, cnt: 313
+delay       : 87
+
+delay: 546 avail 256, cnt: 314
+delay       : 71
+
+delay: 546 avail 256, cnt: 315
+delay       : 119
+
+delay: 546 avail 256, cnt: 316
+delay       : 95
+
+delay: 546 avail 256, cnt: 317
+delay       : 79
+
+delay: 546 avail 256, cnt: 318
+delay       : 119
+
+delay: 546 avail 256, cnt: 319
+delay       : 103
+
+delay: 546 avail 256, cnt: 320
+delay       : 87
+
+delay: 546 avail 256, cnt: 321
+delay       : 71
+
+delay: 546 avail 256, cnt: 322
+delay       : 119
+
+delay: 546 avail 256, cnt: 323
+delay       : 95
+
+delay: 546 avail 256, cnt: 324
+delay       : 79
+
+delay: 546 avail 256, cnt: 325
+delay       : 63
+
+delay: 546 avail 256, cnt: 326
+delay       : 111
+
+delay: 546 avail 256, cnt: 327
+delay       : 71
+
+delay: 546 avail 256, cnt: 328
+delay       : 111
+
+delay: 546 avail 256, cnt: 329
+delay       : 95
+
+delay: 546 avail 256, cnt: 330
+delay       : 63
+
+delay: 546 avail 256, cnt: 331
+delay       : 111
+
+delay: 546 avail 256, cnt: 332
+delay       : 87
+
+delay: 546 avail 256, cnt: 333
+delay       : 127
+
+delay: 546 avail 256, cnt: 334
+delay       : 103
+
+delay: 546 avail 256, cnt: 335
+delay       : 87
+
+delay: 546 avail 256, cnt: 336
+delay       : 71
+
+delay: 546 avail 256, cnt: 337
+delay       : 119
+
+delay: 546 avail 256, cnt: 338
+delay       : 95
+
+delay: 546 avail 256, cnt: 339
+delay       : 79
+
+delay: 546 avail 256, cnt: 340
+delay       : 119
+
+delay: 546 avail 256, cnt: 341
+delay       : 103
+
+delay: 546 avail 256, cnt: 342
+delay       : 87
+
+delay: 546 avail 256, cnt: 343
+delay       : 119
+
+delay: 546 avail 256, cnt: 344
+delay       : 103
+
+delay: 546 avail 256, cnt: 345
+delay       : 87
+
+delay: 546 avail 256, cnt: 346
+delay       : 71
+
+delay: 546 avail 256, cnt: 347
+delay       : 119
+
+delay: 546 avail 256, cnt: 348
+delay       : 103
+
+delay: 546 avail 256, cnt: 349
+delay       : 87
+
+delay: 546 avail 256, cnt: 350
+delay       : 71
+
+delay: 546 avail 256, cnt: 351
+delay       : 119
+
+delay: 546 avail 256, cnt: 352
+delay       : 95
+
+delay: 546 avail 256, cnt: 353
+delay       : 79
+
+delay: 546 avail 256, cnt: 354
+delay       : 63
+
+delay: 546 avail 256, cnt: 355
+delay       : 111
+
+delay: 546 avail 256, cnt: 356
+delay       : 95
+
+delay: 546 avail 256, cnt: 357
+delay       : 79
+
+delay: 546 avail 256, cnt: 358
+delay       : 119
+
+delay: 546 avail 256, cnt: 359
+delay       : 103
+
+delay: 546 avail 256, cnt: 360
+delay       : 87
+
+delay: 546 avail 256, cnt: 361
+delay       : 71
+
+delay: 546 avail 256, cnt: 362
+delay       : 111
+
+delay: 546 avail 256, cnt: 363
+delay       : 95
+
+delay: 546 avail 256, cnt: 364
+delay       : 79
+
+delay: 546 avail 256, cnt: 365
+delay       : 63
+
+delay: 546 avail 256, cnt: 366
+delay       : 111
+
+delay: 546 avail 256, cnt: 367
+delay       : 95
+
+delay: 546 avail 256, cnt: 368
+delay       : 79
+
+delay: 546 avail 256, cnt: 369
+delay       : 119
+
+delay: 546 avail 256, cnt: 370
+delay       : 103
+
+delay: 546 avail 256, cnt: 371
+delay       : 79
+
+delay: 546 avail 256, cnt: 372
+delay       : 119
+
+delay: 546 avail 256, cnt: 373
+delay       : 103
+
+delay: 546 avail 256, cnt: 374
+delay       : 87
+
+delay: 546 avail 256, cnt: 375
+delay       : 127
+
+delay: 546 avail 256, cnt: 376
+delay       : 111
+
+delay: 546 avail 256, cnt: 377
+delay       : 95
+
+delay: 546 avail 256, cnt: 378
+delay       : 71
+
+delay: 546 avail 256, cnt: 379
+delay       : 63
+
+delay: 546 avail 256, cnt: 380
+delay       : 111
+
+delay: 546 avail 256, cnt: 381
+delay       : 87
+
+delay: 546 avail 256, cnt: 382
+delay       : 71
+
+delay: 546 avail 256, cnt: 383
+delay       : 111
+
+delay: 546 avail 256, cnt: 384
+delay       : 95
+
+delay: 546 avail 256, cnt: 385
+delay       : 71
+
+delay: 546 avail 256, cnt: 386
+delay       : 119
+
+delay: 546 avail 256, cnt: 387
+delay       : 95
+
+delay: 546 avail 256, cnt: 388
+delay       : 87
+
+delay: 546 avail 256, cnt: 389
+delay       : 71
+
+delay: 546 avail 256, cnt: 390
+delay       : 111
+
+delay: 546 avail 256, cnt: 391
+delay       : 79
+
+delay: 546 avail 256, cnt: 392
+delay       : 119
+
+delay: 546 avail 256, cnt: 393
+delay       : 111
+
+delay: 546 avail 256, cnt: 394
+delay       : 95
+
+delay: 546 avail 256, cnt: 395
+delay       : 71
+
+delay: 546 avail 256, cnt: 396
+delay       : 127
+
+delay: 546 avail 256, cnt: 397
+delay       : 111
+
+delay: 546 avail 256, cnt: 398
+delay       : 87
+
+delay: 546 avail 256, cnt: 399
+delay       : 111
+
+delay: 546 avail 256, cnt: 400
+delay       : 87
+
+delay: 546 avail 256, cnt: 401
+delay       : 111
+
+delay: 546 avail 256, cnt: 402
+delay       : 95
+
+delay: 546 avail 256, cnt: 403
+delay       : 127
+
+delay: 546 avail 256, cnt: 404
+delay       : 103
+
+delay: 546 avail 256, cnt: 405
+delay       : 79
+
+delay: 546 avail 256, cnt: 406
+delay       : 119
+
+delay: 546 avail 256, cnt: 407
+delay       : 95
+
+delay: 546 avail 256, cnt: 408
+delay       : 79
+
+delay: 546 avail 256, cnt: 409
+delay       : 119
+
+delay: 546 avail 256, cnt: 410
+delay       : 87
+
+delay: 546 avail 256, cnt: 411
+delay       : 71
+
+delay: 546 avail 256, cnt: 412
+delay       : 119
+
+delay: 546 avail 256, cnt: 413
+delay       : 95
+
+delay: 546 avail 256, cnt: 414
+delay       : 71
+
+delay: 546 avail 256, cnt: 415
+delay       : 119
+
+delay: 546 avail 256, cnt: 416
+delay       : 103
+
+delay: 546 avail 256, cnt: 417
+delay       : 87
+
+delay: 546 avail 256, cnt: 418
+delay       : 63
+
+delay: 546 avail 256, cnt: 419
+delay       : 103
+
+delay: 546 avail 256, cnt: 420
+delay       : 79
+
+delay: 546 avail 256, cnt: 421
+delay       : 111
+
+delay: 546 avail 256, cnt: 422
+delay       : 95
+
+delay: 546 avail 256, cnt: 423
+delay       : 79
+
+delay: 546 avail 256, cnt: 424
+delay       : 127
+
+delay: 546 avail 256, cnt: 425
+delay       : 103
+
+delay: 546 avail 256, cnt: 426
+delay       : 87
+
+delay: 546 avail 256, cnt: 427
+delay       : 103
+
+delay: 546 avail 256, cnt: 428
+delay       : 79
+
+delay: 546 avail 256, cnt: 429
+delay       : 127
+
+delay: 546 avail 256, cnt: 430
+delay       : 111
+
+delay: 546 avail 256, cnt: 431
+delay       : 95
+
+delay: 546 avail 256, cnt: 432
+delay       : 71
+
+delay: 546 avail 256, cnt: 433
+delay       : 127
+
+delay: 546 avail 256, cnt: 434
+delay       : 111
+
+delay: 546 avail 256, cnt: 435
+delay       : 87
+
+delay: 546 avail 256, cnt: 436
+delay       : 79
+
+delay: 546 avail 256, cnt: 437
+delay       : 127
+
+delay: 546 avail 256, cnt: 438
+delay       : 103
+
+delay: 546 avail 256, cnt: 439
+delay       : 95
+
+delay: 546 avail 256, cnt: 440
+delay       : 79
+
+delay: 546 avail 256, cnt: 441
+delay       : 119
+
+delay: 546 avail 256, cnt: 442
+delay       : 103
+
+delay: 546 avail 256, cnt: 443
+delay       : 87
+
+delay: 546 avail 256, cnt: 444
+delay       : 63
+
+delay: 546 avail 256, cnt: 445
+delay       : 103
+
+delay: 546 avail 256, cnt: 446
+delay       : 87
+
+delay: 546 avail 256, cnt: 447
+delay       : 63
+
+delay: 546 avail 256, cnt: 448
+delay       : 111
+
+delay: 546 avail 256, cnt: 449
+delay       : 95
+
+delay: 546 avail 256, cnt: 450
+delay       : 71
+
+delay: 546 avail 256, cnt: 451
+delay       : 111
+
+delay: 546 avail 256, cnt: 452
+delay       : 95
+
+delay: 546 avail 256, cnt: 453
+delay       : 71
+
+delay: 546 avail 256, cnt: 454
+delay       : 119
+
+delay: 546 avail 256, cnt: 455
+delay       : 103
+
+delay: 546 avail 256, cnt: 456
+delay       : 87
+
+delay: 546 avail 256, cnt: 457
+delay       : 63
+
+delay: 546 avail 256, cnt: 458
+delay       : 119
+
+delay: 546 avail 256, cnt: 459
+delay       : 95
+
+delay: 546 avail 256, cnt: 460
+delay       : 79
+
+delay: 546 avail 256, cnt: 461
+delay       : 71
+
+delay: 546 avail 256, cnt: 462
+delay       : 119
+
+delay: 546 avail 256, cnt: 463
+delay       : 95
+
+delay: 546 avail 256, cnt: 464
+delay       : 127
+
+delay: 546 avail 256, cnt: 465
+delay       : 95
+
+delay: 546 avail 256, cnt: 466
+delay       : 79
+
+delay: 546 avail 256, cnt: 467
+delay       : 63
+
+delay: 546 avail 256, cnt: 468
+delay       : 111
+
+delay: 546 avail 256, cnt: 469
+delay       : 87
+
+delay: 546 avail 256, cnt: 470
+delay       : 71
+
+delay: 546 avail 256, cnt: 471
+delay       : 119
+
+delay: 546 avail 256, cnt: 472
+delay       : 103
+
+delay: 546 avail 256, cnt: 473
+delay       : 127
+
+delay: 546 avail 256, cnt: 474
+delay       : 111
+
+delay: 546 avail 256, cnt: 475
+delay       : 87
+
+delay: 546 avail 256, cnt: 476
+delay       : 71
+
+delay: 546 avail 256, cnt: 477
+delay       : 111
+
+delay: 546 avail 256, cnt: 478
+delay       : 95
+
+delay: 546 avail 256, cnt: 479
+delay       : 71
+
+delay: 546 avail 256, cnt: 480
+delay       : 111
+
+delay: 546 avail 256, cnt: 481
+delay       : 111
+
+delay: 546 avail 256, cnt: 482
+delay       : 103
+
+delay: 546 avail 256, cnt: 483
+delay       : 103
+
+delay: 546 avail 256, cnt: 484
+delay       : 79
+
+delay: 546 avail 256, cnt: 485
+delay       : 127
+
+delay: 546 avail 256, cnt: 486
+delay       : 111
+
+delay: 546 avail 256, cnt: 487
+delay       : 95
+
+delay: 546 avail 256, cnt: 488
+delay       : 71
+
+delay: 546 avail 256, cnt: 489
+delay       : 111
+
+delay: 546 avail 256, cnt: 490
+delay       : 95
+
+delay: 546 avail 256, cnt: 491
+delay       : 79
+
+delay: 546 avail 256, cnt: 492
+delay       : 119
+
+delay: 546 avail 256, cnt: 493
+delay       : 103
+
+delay: 546 avail 256, cnt: 494
+delay       : 71
+
+delay: 546 avail 256, cnt: 495
+delay       : 119
+
+delay: 546 avail 256, cnt: 496
+delay       : 103
+
+delay: 546 avail 256, cnt: 497
+delay       : 79
+
+delay: 546 avail 256, cnt: 498
+delay       : 127
+
+delay: 546 avail 256, cnt: 499
+delay       : 103
+
+delay: 546 avail 256, cnt: 500
+delay       : 79
+
+delay: 546 avail 256, cnt: 501
+delay       : 119
+
+delay: 546 avail 256, cnt: 502
+delay       : 111
+
+delay: 546 avail 256, cnt: 503
+delay       : 87
+
+delay: 546 avail 256, cnt: 504
+delay       : 63
+
+delay: 546 avail 256, cnt: 505
+delay       : 111
+
+delay: 546 avail 256, cnt: 506
+delay       : 87
+
+delay: 546 avail 256, cnt: 507
+delay       : 63
+
+delay: 546 avail 256, cnt: 508
+delay       : 111
+
+delay: 546 avail 256, cnt: 509
+delay       : 95
+
+delay: 546 avail 256, cnt: 510
+delay       : 79
+
+delay: 546 avail 256, cnt: 511
+delay       : 119
+
+delay: 546 avail 256, cnt: 512
+delay       : 95
+
+delay: 546 avail 256, cnt: 513
+delay       : 63
+
+delay: 546 avail 256, cnt: 514
+delay       : 103
+
+delay: 546 avail 256, cnt: 515
+delay       : 79
+
+delay: 546 avail 256, cnt: 516
+delay       : 119
+
+delay: 546 avail 256, cnt: 517
+delay       : 95
+
+delay: 546 avail 256, cnt: 518
+delay       : 79
+
+delay: 546 avail 256, cnt: 519
+delay       : 119
+
+delay: 546 avail 256, cnt: 520
+delay       : 95
+
+delay: 546 avail 256, cnt: 521
+delay       : 79
+
+delay: 546 avail 256, cnt: 522
+delay       : 119
+
+delay: 546 avail 256, cnt: 523
+delay       : 95
+
+delay: 546 avail 256, cnt: 524
+delay       : 71
+
+delay: 546 avail 256, cnt: 525
+delay       : 111
+
+delay: 546 avail 256, cnt: 526
+delay       : 87
+
+delay: 546 avail 256, cnt: 527
+delay       : 71
+
+delay: 546 avail 256, cnt: 528
+delay       : 111
+
+delay: 546 avail 256, cnt: 529
+delay       : 87
+
+delay: 546 avail 256, cnt: 530
+delay       : 63
+
+delay: 546 avail 256, cnt: 531
+delay       : 111
+
+delay: 546 avail 256, cnt: 532
+delay       : 87
+
+delay: 546 avail 256, cnt: 533
+delay       : 63
+
+delay: 546 avail 256, cnt: 534
+delay       : 111
+
+delay: 546 avail 256, cnt: 535
+delay       : 87
+
+delay: 546 avail 256, cnt: 536
+delay       : 63
+
+delay: 546 avail 256, cnt: 537
+delay       : 111
+
+delay: 546 avail 256, cnt: 538
+delay       : 87
+
+delay: 546 avail 256, cnt: 539
+delay       : 63
+
+delay: 546 avail 256, cnt: 540
+delay       : 103
+
+delay: 546 avail 256, cnt: 541
+delay       : 79
+
+delay: 546 avail 256, cnt: 542
+delay       : 119
+
+delay: 546 avail 256, cnt: 543
+delay       : 95
+
+delay: 546 avail 256, cnt: 544
+delay       : 71
+
+delay: 546 avail 256, cnt: 545
+delay       : 119
+
+delay: 546 avail 256, cnt: 546
+delay       : 95
+
+delay: 546 avail 256, cnt: 547
+delay       : 71
+
+delay: 546 avail 256, cnt: 548
+delay       : 111
+
+delay: 546 avail 256, cnt: 549
+delay       : 119
+
+delay: 546 avail 256, cnt: 550
+delay       : 95
+
+delay: 546 avail 256, cnt: 551
+delay       : 71
+
+delay: 546 avail 256, cnt: 552
+delay       : 111
+
+delay: 546 avail 256, cnt: 553
+delay       : 95
+
+delay: 546 avail 256, cnt: 554
+delay       : 71
+
+delay: 546 avail 256, cnt: 555
+delay       : 111
+
+delay: 546 avail 256, cnt: 556
+delay       : 95
+
+delay: 546 avail 256, cnt: 557
+delay       : 71
+
+delay: 546 avail 256, cnt: 558
+delay       : 111
+
+delay: 546 avail 256, cnt: 559
+delay       : 87
+
+delay: 546 avail 256, cnt: 560
+delay       : 63
+
+delay: 546 avail 256, cnt: 561
+delay       : 111
+
+delay: 546 avail 256, cnt: 562
+delay       : 95
+
+delay: 546 avail 256, cnt: 563
+delay       : 71
+
+delay: 546 avail 256, cnt: 564
+delay       : 111
+
+delay: 546 avail 256, cnt: 565
+delay       : 95
+
+delay: 546 avail 256, cnt: 566
+delay       : 71
+
+delay: 546 avail 256, cnt: 567
+delay       : 111
+
+delay: 546 avail 256, cnt: 568
+delay       : 87
+
+delay: 546 avail 256, cnt: 569
+delay       : 127
+
+delay: 546 avail 256, cnt: 570
+delay       : 103
+
+delay: 546 avail 256, cnt: 571
+delay       : 79
+
+delay: 546 avail 256, cnt: 572
+delay       : 119
+
+delay: 546 avail 256, cnt: 573
+delay       : 95
+
+delay: 546 avail 256, cnt: 574
+delay       : 71
+
+delay: 546 avail 256, cnt: 575
+delay       : 119
+
+delay: 546 avail 256, cnt: 576
+delay       : 95
+
+delay: 546 avail 256, cnt: 577
+delay       : 71
+
+delay: 546 avail 256, cnt: 578
+delay       : 111
+
+delay: 546 avail 256, cnt: 579
+delay       : 87
+
+delay: 546 avail 256, cnt: 580
+delay       : 119
+
+delay: 546 avail 256, cnt: 581
+delay       : 103
+
+delay: 546 avail 256, cnt: 582
+delay       : 79
+
+delay: 546 avail 256, cnt: 583
+delay       : 119
+
+delay: 546 avail 256, cnt: 584
+delay       : 103
+
+delay: 546 avail 256, cnt: 585
+delay       : 87
+
+delay: 546 avail 256, cnt: 586
+delay       : 63
+
+delay: 546 avail 256, cnt: 587
+delay       : 103
+
+delay: 546 avail 256, cnt: 588
+delay       : 63
+
+delay: 546 avail 256, cnt: 589
+delay       : 103
+
+delay: 546 avail 256, cnt: 590
+delay       : 71
+
+delay: 546 avail 256, cnt: 591
+delay       : 111
+
+delay: 546 avail 256, cnt: 592
+delay       : 87
+
+delay: 546 avail 256, cnt: 593
+delay       : 63
+
+delay: 546 avail 256, cnt: 594
+delay       : 111
+
+delay: 546 avail 256, cnt: 595
+delay       : 87
+
+delay: 546 avail 256, cnt: 596
+delay       : 119
+
+delay: 546 avail 256, cnt: 597
+delay       : 87
+
+delay: 546 avail 256, cnt: 598
+delay       : 103
+
+delay: 546 avail 256, cnt: 599
+delay       : 79
+
+delay: 546 avail 256, cnt: 600
+delay       : 111
+
+delay: 546 avail 256, cnt: 601
+delay       : 95
+
+delay: 546 avail 256, cnt: 602
+delay       : 71
+
+delay: 546 avail 256, cnt: 603
+delay       : 103
+
+delay: 546 avail 256, cnt: 604
+delay       : 79
+
+delay: 546 avail 256, cnt: 605
+delay       : 127
+
+delay: 546 avail 256, cnt: 606
+delay       : 103
+
+delay: 546 avail 256, cnt: 607
+delay       : 71
+
+delay: 546 avail 256, cnt: 608
+delay       : 111
+
+delay: 546 avail 256, cnt: 609
+delay       : 87
+
+delay: 546 avail 256, cnt: 610
+delay       : 63
+
+delay: 546 avail 256, cnt: 611
+delay       : 111
+
+delay: 546 avail 256, cnt: 612
+delay       : 87
+
+delay: 546 avail 256, cnt: 613
+delay       : 63
+
+delay: 546 avail 256, cnt: 614
+delay       : 103
+
+delay: 546 avail 256, cnt: 615
+delay       : 71
+
+delay: 546 avail 256, cnt: 616
+delay       : 103
+
+delay: 546 avail 256, cnt: 617
+delay       : 79
+
+delay: 546 avail 256, cnt: 618
+delay       : 119
+
+delay: 546 avail 256, cnt: 619
+delay       : 95
+
+delay: 546 avail 256, cnt: 620
+delay       : 79
+
+delay: 546 avail 256, cnt: 621
+delay       : 119
+
+delay: 546 avail 256, cnt: 622
+delay       : 95
+
+delay: 546 avail 256, cnt: 623
+delay       : 63
+
+delay: 546 avail 256, cnt: 624
+delay       : 103
+
+delay: 546 avail 256, cnt: 625
+delay       : 79
+
+delay: 546 avail 256, cnt: 626
+delay       : 119
+
+delay: 546 avail 256, cnt: 627
+delay       : 87
+
+delay: 546 avail 256, cnt: 628
+delay       : 63
+
+delay: 546 avail 256, cnt: 629
+delay       : 103
+
+delay: 546 avail 256, cnt: 630
+delay       : 79
+
+delay: 546 avail 256, cnt: 631
+delay       : 127
+
+delay: 546 avail 256, cnt: 632
+delay       : 103
+
+delay: 546 avail 256, cnt: 633
+delay       : 79
+
+delay: 546 avail 256, cnt: 634
+delay       : 119
+
+delay: 546 avail 256, cnt: 635
+delay       : 95
+
+delay: 546 avail 256, cnt: 636
+delay       : 71
+
+delay: 546 avail 256, cnt: 637
+delay       : 111
+
+delay: 546 avail 256, cnt: 638
+delay       : 87
+
+delay: 546 avail 256, cnt: 639
+delay       : 71
+
+delay: 546 avail 256, cnt: 640
+delay       : 111
+
+delay: 546 avail 256, cnt: 641
+delay       : 87
+
+delay: 546 avail 256, cnt: 642
+delay       : 63
+
+delay: 546 avail 256, cnt: 643
+delay       : 103
+
+delay: 546 avail 256, cnt: 644
+delay       : 79
+
+delay: 546 avail 256, cnt: 645
+delay       : 111
+
+delay: 546 avail 256, cnt: 646
+delay       : 95
+
+delay: 546 avail 256, cnt: 647
+delay       : 71
+
+delay: 546 avail 256, cnt: 648
+delay       : 119
+
+delay: 546 avail 256, cnt: 649
+delay       : 95
+
+delay: 546 avail 256, cnt: 650
+delay       : 63
+
+delay: 546 avail 256, cnt: 651
+delay       : 103
+
+delay: 546 avail 256, cnt: 652
+delay       : 71
+
+delay: 546 avail 256, cnt: 653
+delay       : 111
+
+delay: 546 avail 256, cnt: 654
+delay       : 87
+
+delay: 546 avail 256, cnt: 655
+delay       : 127
+
+delay: 546 avail 256, cnt: 656
+delay       : 103
+
+delay: 546 avail 256, cnt: 657
+delay       : 87
+
+delay: 546 avail 256, cnt: 658
+delay       : 63
+
+delay: 546 avail 256, cnt: 659
+delay       : 103
+
+delay: 546 avail 256, cnt: 660
+delay       : 71
+
+delay: 546 avail 256, cnt: 661
+delay       : 111
+
+delay: 546 avail 256, cnt: 662
+delay       : 87
+
+delay: 546 avail 256, cnt: 663
+delay       : 127
+
+delay: 546 avail 256, cnt: 664
+delay       : 103
+
+delay: 546 avail 256, cnt: 665
+delay       : 79
+
+delay: 546 avail 256, cnt: 666
+delay       : 119
+
+delay: 546 avail 256, cnt: 667
+delay       : 87
+
+delay: 546 avail 256, cnt: 668
+delay       : 63
+
+delay: 546 avail 256, cnt: 669
+delay       : 103
+
+delay: 546 avail 256, cnt: 670
+delay       : 87
+
+delay: 546 avail 256, cnt: 671
+delay       : 127
+
+delay: 546 avail 256, cnt: 672
+delay       : 103
+
+delay: 546 avail 256, cnt: 673
+delay       : 87
+
+delay: 546 avail 256, cnt: 674
+delay       : 127
+
+delay: 546 avail 256, cnt: 675
+delay       : 95
+
+delay: 546 avail 256, cnt: 676
+delay       : 71
+
+delay: 546 avail 256, cnt: 677
+delay       : 111
+
+delay: 546 avail 256, cnt: 678
+delay       : 87
+
+delay: 546 avail 256, cnt: 679
+delay       : 127
+
+delay: 546 avail 256, cnt: 680
+delay       : 103
+
+delay: 546 avail 256, cnt: 681
+delay       : 71
+
+delay: 546 avail 256, cnt: 682
+delay       : 111
+
+delay: 546 avail 256, cnt: 683
+delay       : 79
+
+delay: 546 avail 256, cnt: 684
+delay       : 119
+
+delay: 546 avail 256, cnt: 685
+delay       : 87
+
+delay: 546 avail 256, cnt: 686
+delay       : 127
+
+delay: 546 avail 256, cnt: 687
+delay       : 103
+
+delay: 546 avail 256, cnt: 688
+delay       : 103
+
+delay: 546 avail 256, cnt: 689
+delay       : 63
+
+delay: 546 avail 256, cnt: 690
+delay       : 95
+
+delay: 546 avail 256, cnt: 691
+delay       : 71
+
+delay: 546 avail 256, cnt: 692
+delay       : 111
+
+delay: 546 avail 256, cnt: 693
+delay       : 79
+
+delay: 546 avail 256, cnt: 694
+delay       : 119
+
+delay: 546 avail 256, cnt: 695
+delay       : 87
+
+delay: 546 avail 256, cnt: 696
+delay       : 119
+
+delay: 546 avail 256, cnt: 697
+delay       : 87
+
+delay: 546 avail 256, cnt: 698
+delay       : 127
+
+delay: 546 avail 256, cnt: 699
+delay       : 95
+
+delay: 546 avail 256, cnt: 700
+delay       : 71
+
+delay: 546 avail 256, cnt: 701
+delay       : 103
+
+delay: 546 avail 256, cnt: 702
+delay       : 79
+
+delay: 546 avail 256, cnt: 703
+delay       : 127
+
+delay: 546 avail 256, cnt: 704
+delay       : 103
+
+delay: 546 avail 256, cnt: 705
+delay       : 79
+
+delay: 546 avail 256, cnt: 706
+delay       : 111
+
+delay: 546 avail 256, cnt: 707
+delay       : 79
+
+delay: 546 avail 256, cnt: 708
+delay       : 111
+
+delay: 546 avail 256, cnt: 709
+delay       : 95
+
+delay: 546 avail 256, cnt: 710
+delay       : 71
+
+delay: 546 avail 256, cnt: 711
+delay       : 95
+
+delay: 546 avail 256, cnt: 712
+delay       : 79
+
+delay: 546 avail 256, cnt: 713
+delay       : 119
+
+delay: 546 avail 256, cnt: 714
+delay       : 87
+
+delay: 546 avail 256, cnt: 715
+delay       : 127
+
+delay: 546 avail 256, cnt: 716
+delay       : 95
+
+delay: 546 avail 256, cnt: 717
+delay       : 63
+
+delay: 546 avail 256, cnt: 718
+delay       : 95
+
+delay: 546 avail 256, cnt: 719
+delay       : 71
+
+delay: 546 avail 256, cnt: 720
+delay       : 111
+
+delay: 546 avail 256, cnt: 721
+delay       : 87
+
+delay: 546 avail 256, cnt: 722
+delay       : 119
+
+delay: 546 avail 256, cnt: 723
+delay       : 95
+
+delay: 546 avail 256, cnt: 724
+delay       : 63
+
+delay: 546 avail 256, cnt: 725
+delay       : 103
+
+delay: 546 avail 256, cnt: 726
+delay       : 71
+
+delay: 546 avail 256, cnt: 727
+delay       : 111
+
+delay: 546 avail 256, cnt: 728
+delay       : 79
+
+delay: 546 avail 256, cnt: 729
+delay       : 119
+
+delay: 546 avail 256, cnt: 730
+delay       : 95
+
+delay: 546 avail 256, cnt: 731
+delay       : 119
+
+delay: 546 avail 256, cnt: 732
+delay       : 9
